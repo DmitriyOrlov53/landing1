@@ -1,0 +1,29 @@
+.colorfull-headline
+    font-weight: bold
+
+.colorfull-headline__first
+    font-family: 'Playfair Display'
+.colorfull-headline__first_size_42
+    @include rem-font-size(42px)
+.colorfull-headline__first_size_33
+    @include rem-font-size(33px)
+    @media screen and ( max-width:  500px)
+        font-size: calc(#{LagrangeCalc(10rem, (320: 71, 500: 123.05))})
+.colorfull-headline__first_size_29
+    @include rem-font-size(29px)
+.colorfull-headline__first_size_25
+    @include rem-font-size(25px)
+
+.colorfull-headline__second
+    font-family: 'Gabelisa'
+    color: #F04B58
+.colorfull-headline__second_size_123
+    @include rem-font-size(123px)
+    @media screen and ( max-width:  1024px)
+        font-size: calc(#{LagrangeCalc(100vw, (320: 80, 600: 110))})
+.colorfull-headline__second_size_100
+    @include rem-font-size(100px)
+.colorfull-headline__second_size_63
+    @include rem-font-size(63px)
+    @media screen and ( max-width:  500px)
+        font-size: calc(#{LagrangeCalc(10rem, (320: 62, 500: 81.9))})

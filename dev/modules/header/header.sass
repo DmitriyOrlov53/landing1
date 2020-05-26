@@ -1,0 +1,15 @@
+.header
+    background: radial-gradient(circle, #605E8C, #414064)
+    position: relative
+    z-index: 5
+    padding-bottom: 43.5%
+    @media screen and ( max-width: 1024px)
+        padding-bottom: calc(#{LagrangeCalc(100%, (1024: 730, 768: 570))})
+    @media screen and ( max-width: 600px)
+        padding-bottom: 32%
+
+@import ./header__phone/header__phone
+@import ./header__open-nav/header__open-nav
+@import ./header__nav/header__nav
+@import ./header__things/header__things
+@import ./header__headline/header__headline

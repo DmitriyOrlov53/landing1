@@ -1,0 +1,6 @@
+mixin our-story__things(thing)
+    img(
+        src!= require(`./modules/our-story/our-story__things/assets/our-story__things_${thing}.png`).default,
+        alt!=`thing ${thing}`,
+        class='our-story__things our-story__things_' + thing
+    )

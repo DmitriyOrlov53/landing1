@@ -1,0 +1,14 @@
+include ./menu-item__price/menu-item__price
+include ./menu-item__description/menu-item__description
+
+mixin menu-item(headline, range, price)
+    article.menu-item
+        +menu-item__price(price)
+        <h#{range}>
+            +colorfull-headline({first: {size: 25, text: headline}})
+        </h#{range}>
+        +menu-item__description
+            block
+
+
+        

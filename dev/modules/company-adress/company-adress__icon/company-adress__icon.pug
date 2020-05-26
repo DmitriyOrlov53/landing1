@@ -1,0 +1,6 @@
+mixin company-adress__icon(type)
+        img(
+        src!= require(`./modules/company-adress/company-adress__icon/assets/company-adress__icon_${type}.png`).default,
+        alt!=`thing ${type}`,
+        class='company-adress__icon'
+    )

@@ -1,0 +1,12 @@
+include ./form__headline/form__headline
+include ./form__input/form__input
+include ./form__submit/form__submit
+
+mixin form(level)
+    form.form
+        +form__headline(level)
+            block headline
+        block input
+        +form__submit
+            block submit
+    

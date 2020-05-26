@@ -1,0 +1,6 @@
+mixin reservation__things(thing)
+    img(
+        src!= require(`./modules/reservation/reservation__things/assets/reservation__things_${thing}.png`).default,
+        alt!=`thing ${thing}`,
+        class='reservation__things reservation__things_' + thing
+    )

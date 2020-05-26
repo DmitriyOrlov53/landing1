@@ -1,0 +1,8 @@
+include ./reservation__form/reservation__form
+include ./reservation__things/reservation__things
+
+section.reservation
+    include ./reservation__headline/reservation__headline
+    +reservation__form
+    +reservation__things('tomato')
+    +reservation__things('breakfast')

@@ -1,0 +1,15 @@
+include ./footer__adress/footer__adress
+
+a(id='contact-us')
+footer.footer
+    include ./footer__picture/footer__picture
+    +footer__adress(
+        'physical',
+        'Main Road, Building Name, Country'
+    )
+    +footer__adress(
+        'electronic',
+        'info@companyname.com'
+    )
+    include ./footer__social/footer__social
+    include ./footer__meta/footer__meta
