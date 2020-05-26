@@ -1,9 +1,0 @@
-include ./social-link__icon/social-link__icon
-
-mixin social-link(data)
-    a(
-        class='social-link' 
-        href=data.url
-        rel='noopener noreferer'
-    )
-        +social-link__icon(data.type)

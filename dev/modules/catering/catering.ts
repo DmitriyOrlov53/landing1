@@ -1,1 +1,0 @@
-import './catering__switcher/catering__switcher'
